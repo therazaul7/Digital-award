@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'producti
         .copy('dev/img', 'dist/assets/img')
         .copy('dev/css', 'dist/assets/css')
         .copy('dev/font', 'dist/assets/font')
+        
         .copy('dev/js', 'dist/assets/js')
         .copy('dev/vendor', 'dist/assets/vendor');
 }  

@@ -72,6 +72,9 @@
          border-bottom: 0;
     }
     /*Animation*/
+    .exdda-menu li:hover .exdda-menu li a {
+        color: $color_orange;
+    }
     .exdda-menu li:hover {
          > .exdda-sub-menu {
              opacity: 1;

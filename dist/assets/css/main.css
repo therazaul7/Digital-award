@@ -236,6 +236,10 @@ a:hover, a:active {
   }
 
   /*Animation*/
+  .exdda-menu li:hover .exdda-menu li a {
+    color: #FEB41C;
+  }
+
   .exdda-menu li:hover > .exdda-sub-menu {
     opacity: 1;
     visibility: visible;
