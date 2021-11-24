@@ -2,6 +2,15 @@
 
 {% block title %}Index one{% endblock %} 
 
-{% block content %}
-	page one content data
+{% block header %}
+	{% include 'partials/header.html' %}
 {% endblock %}
+
+{% block sidebar %} 
+{% include 'partials/main-container.html' %}
+{% endblock %}
+
+
+{% block footer %}
+	{% include 'partials/footer.html' %}
+{% endblock %}	

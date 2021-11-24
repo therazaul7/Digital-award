@@ -1,24 +1,18 @@
 .exdda-header-top {
-     position: relative;
+     border-bottom: 1px solid #afafaf5c;
 }
- .exdda-header-top:after {
-     content: "";
-     border: 1px solid #434752;
-     bottom: 0;
-     width: 115%;
-     left: -82px;
-     position: absolute;
-}
+
  @media (min-width: 992px) {
      nav > ul.exdda-menu > li {
          float: left;
          margin-right: 15px;
          position: relative;
+         padding: 15px 10px;
     }
      nav > ul.exdda-menu > li:last-child {
          margin-right: 0px;
     }
-     nav ul.exdda-menu li a {
+     nav ul.exdda-menu > li > a {
          padding: 15px 10px;
          cursor: pointer;
          color: $color_white;
@@ -39,7 +33,7 @@
          padding: 0;
          background-color: $color_white;
          opacity: 0;
-         top: 140%;
+         top: 100%;
          min-width: 220px;
          transition: transform 0.3s,opacity 0.3s;
          visibility: hidden;
@@ -56,6 +50,13 @@
                  letter-spacing: 0.3px;
                  color: $color_text_main;
                  font-weight: 600;
+                 i {
+                    right: 15px;
+                    position: absolute;
+                    font-size: 13px;
+                    transform: rotate(-90deg);
+                    color: $color_orange;
+                 }
             }
              &:last-child a {
                  border-bottom: none;
@@ -71,13 +72,22 @@
          border-bottom: 0;
     }
     /*Animation*/
-     .exdda-menu {
-         li :hover {
-             .exdda-sub-menu {
-                 opacity: 1;
-                 visibility: visible;
-            }
+    .exdda-menu li:hover {
+         > .exdda-sub-menu {
+             opacity: 1;
+             visibility: visible;
         }
+    }
+}
+
+
+@media (max-width: 1024px) {
+     nav ul.exdda-menu > li {
+        margin-right: 6px;
+     }
+     nav ul.exdda-menu > li > a {
+        padding: 12px 8px;
+        font-size: 15px;
     }
 }
  @media (max-width: 992px) {
@@ -89,6 +99,7 @@
          transition: 0.5s;
          bottom: 0;
          background-color: $color_white;
+         z-index: 5;
     }
      .exdda-menu {
          width: 230px;
@@ -108,7 +119,7 @@
             }
         }
     }
-     ul li ul {
+     .exdda-menu > li > ul {
          display: none;
          padding: 0;
          margin: 0;
@@ -116,6 +127,11 @@
          li a {
              padding: 10px 30px !important;
              font-size: 14px !important;
+        }
+    }
+     .exdda-menul li ul li ul {
+         li a {
+             padding: 10px 45px !important;
         }
     }
      .exdda-close-btn {

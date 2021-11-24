@@ -20,7 +20,7 @@
             function resized() {
                 var $mobileMenu = $(".exdda-menu li a"),
                 $menuOpen = $(window).width();
-                if ($menuOpen <= 991) {
+                if ($menuOpen <= 768) {
                     $mobileMenu.on("click", function() {
                         $(this).next().toggle();
                     });
