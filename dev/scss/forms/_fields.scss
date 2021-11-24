@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    &:focus {
+        outline: none;
+    }
+}
+
+select {
+     background: none;
+}
+// Placeholder Color
+
+::placeholder {
+   color: $color_memorized; 
+} 
+
+::-webkit-input-placeholder {
+   color: $color_memorized; 
+} 
+
+:-moz-placeholder {
+   color: $color_memorized; 
+}
+
+:-ms-input-placeholder {
+   color: $color_memorized; 
+}
+form label i {
+   color: $color_memorized;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    padding-left: 3px;
+}
+
+

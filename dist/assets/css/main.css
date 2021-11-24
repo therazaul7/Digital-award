@@ -1,0 +1,452 @@
+/*
+Template Name: Award
+Template URI: http://Award.htmlguru.net
+Author: HTMLguru
+Author URI: http://hopper.net
+Description: It's a HTML5 Award Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+    ## copy 
+    ## headings 
+    ## typography 
+# Forms
+    ## filds
+# Navigation
+	## links
+	## menus
+    ## navigation
+    ## pagination
+# Color
+    ## color
+# others
+    ## accrodion
+    ## image
+    ## others
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Typography 
+--------------------------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45em;
+  color: #17191F;
+  background: #E5E5E5;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  color: #17191F;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+}
+
+/*--------------------------------------------------------------
+# Copy
+--------------------------------------------------------------*/
+::-moz-selection {
+  display: inline-block;
+  text-shadow: none;
+  color: #fff;
+  background: #17191F;
+}
+
+::selection {
+  display: inline-block;
+  text-shadow: none;
+  color: #fff;
+  background: #17191F;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus {
+  outline: none;
+}
+
+select {
+  background: none;
+}
+
+::-moz-placeholder {
+  color: #9196A4;
+}
+
+:-ms-input-placeholder {
+  color: #9196A4;
+}
+
+::placeholder {
+  color: #9196A4;
+}
+
+::-webkit-input-placeholder {
+  color: #9196A4;
+}
+
+:-moz-placeholder {
+  color: #9196A4;
+}
+
+:-ms-input-placeholder {
+  color: #9196A4;
+}
+
+form label i {
+  color: #9196A4;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 0.8em;
+  padding-left: 3px;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  cursor: pointer;
+  color: inherit;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: none;
+}
+a:hover, a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.exdda-header-top {
+  position: relative;
+}
+
+.exdda-header-top:after {
+  content: "";
+  border: 1px solid #434752;
+  bottom: 0;
+  width: 115%;
+  left: -82px;
+  position: absolute;
+}
+
+@media (min-width: 992px) {
+  nav > ul.exdda-menu > li {
+    float: left;
+    margin-right: 15px;
+    position: relative;
+  }
+
+  nav > ul.exdda-menu > li:last-child {
+    margin-right: 0px;
+  }
+
+  nav ul.exdda-menu li a {
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  nav ul.exdda-menu li a i {
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+    color: #FEB41C;
+  }
+
+  /* Sub Menu CSS */
+  .exdda-menu .exdda-sub-menu {
+    position: absolute;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    opacity: 0;
+    top: 140%;
+    min-width: 220px;
+    transition: transform 0.3s, opacity 0.3s;
+    visibility: hidden;
+  }
+  .exdda-menu .exdda-sub-menu li {
+    position: relative;
+  }
+  .exdda-menu .exdda-sub-menu li a {
+    text-align: left;
+    display: block;
+    line-height: 1.5em;
+    padding: 15px;
+    text-transform: none;
+    font-size: 15px;
+    border-bottom: 1px solid #dcdcdc;
+    letter-spacing: 0.3px;
+    color: #17191F;
+    font-weight: 600;
+  }
+  .exdda-menu .exdda-sub-menu li:last-child a {
+    border-bottom: none;
+  }
+
+  .exdda-menu ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0 !important;
+  }
+
+  .exdda-menu .exdda-sub-menu li:last-child > a {
+    border-bottom: 0;
+  }
+
+  /*Animation*/
+  .exdda-menu li :hover .exdda-sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 992px) {
+  .exdda-menu-content {
+    height: 100%;
+    position: fixed;
+    left: -80%;
+    top: 0;
+    transition: 0.5s;
+    bottom: 0;
+    background-color: #fff;
+  }
+
+  .exdda-menu {
+    width: 230px;
+  }
+  .exdda-menu li {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  .exdda-menu li a {
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    text-transform: capitalize;
+  }
+  .exdda-menu li a i {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+  }
+
+  ul li ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+  }
+  ul li ul li a {
+    padding: 10px 30px !important;
+    font-size: 14px !important;
+  }
+
+  .exdda-close-btn {
+    position: absolute;
+    left: 220px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 15px;
+  }
+
+  .exdda-menu-bar i {
+    color: #fff;
+    font-size: 25px;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: -15px;
+  }
+
+  .menu-show {
+    left: 0%;
+  }
+}
+.exdda-text-content, .container {
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.exdda-header-wrapper {
+  position: relative;
+  border-radius: 0 0 70px 70px;
+}
+
+.exdda-footer-content {
+  background-color: #09090a;
+}
+
+.exdda-header-wrapper:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #000000a3;
+}
+
+.exdda-login a {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Color 
+--------------------------------------------------------------*/
+.exdda-border-left-yellow {
+  border-left-color: #FEB41C;
+}
+
+.exdda-text-color {
+  color: #646978;
+}
+
+.exdda-text-orange {
+  color: #FEB41C;
+}
+
+.exdda-color-memorized {
+  color: #9196A4;
+}
+
+/*-------------------------------------------------------------- 
+# Background Color 
+--------------------------------------------------------------*/
+.exdda-bg-orange {
+  background-color: #FEB41C;
+}
+
+.exdda-bg-red {
+  background-color: red;
+}
+
+.exdda-bg-green {
+  background-color: #6BC762;
+}
+
+.exdda-bg-gray {
+  background-color: #21b360;
+}
+
+.exdda-bg-color {
+  background-color: #272A33;
+}
+
+.exdda-bg-white-solid {
+  background-color: #F5F6FA;
+}
+
+.exdda-bg-black {
+  background-color: #17191F;
+}
+
+/*-------------------------------------------------------------- 
+# border-Color 
+--------------------------------------------------------------*/
+.exdda-border-color-one {
+  border-color: #D1D5E0;
+}
+
+.exdda-border-yellow {
+  border: 1px solid #FEB41C;
+}
+
+.exdda-border-green {
+  border: 1px solid #6BC762;
+}
+
+.exdda-border-sky {
+  border: 1px solid #1ED0E9;
+}
+
+.exdda-border-red {
+  border: 1px solid #FE451C;
+}
+
+.exdda-border-b {
+  border-bottom: 1px solid #272A33;
+}
+
+.exdda-checkbox-border-color {
+  border: 1px solid #D1D5E0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+  border-radius: 10px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.exdda-menu-item a.active, .btn:hover {
+  background-color: #FEB41C;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.icon-blank:before {
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 42px;
+  left: 30px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-blank:before {
+    top: 39px;
+  }
+}
+.demo-icon-cansel .icon-cancel {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%);
+}

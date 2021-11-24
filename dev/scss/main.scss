@@ -1,0 +1,50 @@
+/*
+Template Name: Award
+Template URI: http://Award.htmlguru.net
+Author: HTMLguru
+Author URI: http://hopper.net
+Description: It's a HTML5 Award Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+    ## copy 
+    ## headings 
+    ## typography 
+# Forms
+    ## filds
+# Navigation
+	## links
+	## menus
+    ## navigation
+    ## pagination
+# Color
+    ## color
+# others
+    ## accrodion
+    ## image
+    ## others
+
+--------------------------------------------------------------*/
+@import "variables-site/_variables-site";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/_typography";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/_fields";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/_navigation";
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+@import "color/_colors";
