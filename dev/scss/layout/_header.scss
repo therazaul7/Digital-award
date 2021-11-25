@@ -1,4 +1,6 @@
-
+.exdda-header-top {
+     border-bottom: 1px solid #afafaf5c;
+}
 .exdda-text-content, .container {
     margin: auto;
     position: relative;
@@ -13,9 +15,7 @@
     position: relative;
     border-radius: 0 0 70px 70px;
 }
- .exdda-footer-content {
-     background-color: #09090a;
-}
+
  .exdda-header-wrapper:after {
     content: "";
     position:absolute;
@@ -48,4 +48,9 @@
     .exdda-login a {
         font-size: 11px;
     }
+}
+
+/* ==== Footer ==== */
+.exdda-footer-content {
+     background-color: #09090a;
 }
