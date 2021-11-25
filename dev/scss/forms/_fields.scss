@@ -17,19 +17,19 @@ select {
 // Placeholder Color
 
 ::placeholder {
-   color: $color_memorized; 
+   color: $color_text_main; 
 } 
 
 ::-webkit-input-placeholder {
-   color: $color_memorized; 
+   color: $color_text_main; 
 } 
 
 :-moz-placeholder {
-   color: $color_memorized; 
+   color: $color_text_main; 
 }
 
 :-ms-input-placeholder {
-   color: $color_memorized; 
+   color: $color_text_main; 
 }
 
 

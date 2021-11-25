@@ -29,6 +29,12 @@ Version: 1.0
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------- 
@@ -97,38 +103,27 @@ select {
 }
 
 ::-moz-placeholder {
-  color: #9196A4;
+  color: #17191F;
 }
 
 :-ms-input-placeholder {
-  color: #9196A4;
+  color: #17191F;
 }
 
 ::placeholder {
-  color: #9196A4;
+  color: #17191F;
 }
 
 ::-webkit-input-placeholder {
-  color: #9196A4;
+  color: #17191F;
 }
 
 :-moz-placeholder {
-  color: #9196A4;
+  color: #17191F;
 }
 
 :-ms-input-placeholder {
-  color: #9196A4;
-}
-
-form label i {
-  color: #9196A4;
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  font-size: 0.8em;
-  padding-left: 3px;
+  color: #17191F;
 }
 
 /*--------------------------------------------------------------
@@ -156,10 +151,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.exdda-header-top {
-  border-bottom: 1px solid #afafaf5c;
-}
-
 @media (min-width: 992px) {
   nav > ul.exdda-menu > li {
     float: left;
@@ -240,6 +231,10 @@ a:hover, a:active {
     color: #FEB41C;
   }
 
+  .exdda-menu .exdda-sub-menu li:hover {
+    background-color: #FEB41C;
+  }
+
   .exdda-menu li:hover > .exdda-sub-menu {
     opacity: 1;
     visibility: visible;
@@ -273,10 +268,14 @@ a:hover, a:active {
   .exdda-menu li {
     border-bottom: 1px solid #ccc;
     position: relative;
+    margin-right: 0 !important;
+  }
+  .exdda-menu li:last-child {
+    border-bottom: none;
   }
   .exdda-menu li a {
-    font-size: 16px;
-    padding: 10px 15px;
+    font-size: 16px !important;
+    padding: 10px 15px !important;
     display: block;
     text-transform: capitalize;
   }
@@ -286,18 +285,17 @@ a:hover, a:active {
     font-size: 14px;
   }
 
-  .exdda-menu > li > ul {
+  .exdda-menu li ul {
     display: none;
     padding: 0;
     margin: 0;
     transition: 0.5s;
   }
-  .exdda-menu > li > ul li a {
+  .exdda-menu li ul li a {
     padding: 10px 30px !important;
     font-size: 14px !important;
   }
-
-  .exdda-menul li ul li ul li a {
+  .exdda-menu li ul li ul li a {
     padding: 10px 45px !important;
   }
 
@@ -322,6 +320,37 @@ a:hover, a:active {
     left: 0%;
   }
 }
+/*--------------------------------------------------------------
+# Color
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------- 
+# Color 
+--------------------------------------------------------------*/
+.exdda-text-orange {
+  color: #FEB41C;
+}
+
+/*-------------------------------------------------------------- 
+# Background Color 
+--------------------------------------------------------------*/
+.exdda-bg-orange {
+  background-color: #FEB41C;
+}
+
+/*-------------------------------------------------------------- 
+# border-Color 
+--------------------------------------------------------------*/
+.exdda-border-color-one {
+  border-color: #D1D5E0;
+}
+
+/*--------------------------------------------------------------
+# layout
+--------------------------------------------------------------*/
+.exdda-header-top {
+  border-bottom: 1px solid #afafaf5c;
+}
+
 .exdda-text-content, .container {
   margin: auto;
   position: relative;
@@ -336,10 +365,6 @@ a:hover, a:active {
 .exdda-header-wrapper {
   position: relative;
   border-radius: 0 0 70px 70px;
-}
-
-.exdda-footer-content {
-  background-color: #09090a;
 }
 
 .exdda-header-wrapper:after {
@@ -376,119 +401,7 @@ a:hover, a:active {
     font-size: 11px;
   }
 }
-/*--------------------------------------------------------------
-# Color
---------------------------------------------------------------*/
-/*-------------------------------------------------------------- 
-# Color 
---------------------------------------------------------------*/
-.exdda-border-left-yellow {
-  border-left-color: #FEB41C;
-}
-
-.exdda-text-color {
-  color: #646978;
-}
-
-.exdda-text-orange {
-  color: #FEB41C;
-}
-
-.exdda-color-memorized {
-  color: #9196A4;
-}
-
-/*-------------------------------------------------------------- 
-# Background Color 
---------------------------------------------------------------*/
-.exdda-bg-orange {
-  background-color: #FEB41C;
-}
-
-.exdda-bg-red {
-  background-color: red;
-}
-
-.exdda-bg-green {
-  background-color: #6BC762;
-}
-
-.exdda-bg-gray {
-  background-color: #21b360;
-}
-
-.exdda-bg-color {
-  background-color: #272A33;
-}
-
-.exdda-bg-white-solid {
-  background-color: #F5F6FA;
-}
-
-.exdda-bg-black {
-  background-color: #17191F;
-}
-
-/*-------------------------------------------------------------- 
-# border-Color 
---------------------------------------------------------------*/
-.exdda-border-color-one {
-  border-color: #D1D5E0;
-}
-
-.exdda-border-yellow {
-  border: 1px solid #FEB41C;
-}
-
-.exdda-border-green {
-  border: 1px solid #6BC762;
-}
-
-.exdda-border-sky {
-  border: 1px solid #1ED0E9;
-}
-
-.exdda-border-red {
-  border: 1px solid #FE451C;
-}
-
-.exdda-border-b {
-  border-bottom: 1px solid #272A33;
-}
-
-.exdda-checkbox-border-color {
-  border: 1px solid #D1D5E0;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  position: relative;
-  top: 3px;
-  border-radius: 10px;
-}
-
-/* Style the active class, and buttons on mouse-over */
-.exdda-menu-item a.active, .btn:hover {
-  background-color: #FEB41C;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.icon-blank:before {
-  transform: rotate(-135deg);
-  position: absolute;
-  top: 42px;
-  left: 30px;
-  font-size: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .icon-blank:before {
-    top: 39px;
-  }
-}
-.demo-icon-cansel .icon-cancel {
-  position: absolute;
-  top: 50%;
-  left: -45px;
-  transform: translateY(-50%);
+/* ==== Footer ==== */
+.exdda-footer-content {
+  background-color: #09090a;
 }
